@@ -61,7 +61,7 @@ if st.button("🚀 Predict Salary"):
     try:
         with st.spinner("Predicting salary..."):
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+                "https://salary-api-9f1v.onrender.com/predict",
                 json=data
             )
 
