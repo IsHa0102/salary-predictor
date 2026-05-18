@@ -28,9 +28,9 @@ def train():
 
     # Initialize model
     model = XGBRegressor(
-        n_estimators=100,
-        max_depth=6,
-        learning_rate=0.1
+        n_estimators=200,
+        max_depth=4,
+        learning_rate=0.05
     )
 
     # Train model
@@ -51,10 +51,5 @@ def train():
 
     print("\n✅ Model saved at: model/salary_model.pkl")
 
-XGBRegressor(
-    n_estimators=300,
-    max_depth=8,
-    learning_rate=0.05
-)
 if __name__ == "__main__":
     train()
